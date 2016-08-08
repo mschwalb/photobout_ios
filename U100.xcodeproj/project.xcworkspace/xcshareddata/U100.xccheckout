@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B2A44F4C-89BD-4125-99F8-257C5B18C330</string>
+	<key>IDESourceControlProjectName</key>
+	<string>U100</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>53762E85051FF566F7FB2064F2A36B5C8727919E</key>
+		<string>https://github.com/coleglass/U100-Gauss-iOS</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>U100.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>53762E85051FF566F7FB2064F2A36B5C8727919E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/coleglass/U100-Gauss-iOS</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>53762E85051FF566F7FB2064F2A36B5C8727919E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>53762E85051FF566F7FB2064F2A36B5C8727919E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>U100-Gauss-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

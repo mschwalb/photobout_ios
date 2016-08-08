@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EditInputDetailsView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uAp-6R-s2c">
+                    <rect key="frame" x="10" y="10" width="580" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="l9x-za-9pp"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uAp-6R-s2c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="6Oa-ug-l03"/>
+                <constraint firstAttribute="trailing" secondItem="uAp-6R-s2c" secondAttribute="trailing" constant="10" id="MXJ-XX-bN4"/>
+                <constraint firstAttribute="bottom" secondItem="uAp-6R-s2c" secondAttribute="bottom" id="gdy-pm-zNq"/>
+                <constraint firstItem="uAp-6R-s2c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="xCT-Pz-fbq"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="gdy-pm-zNq"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="input" destination="uAp-6R-s2c" id="gX0-CN-rvW"/>
+            </connections>
+        </view>
+    </objects>
+</document>

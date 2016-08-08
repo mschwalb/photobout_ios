@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoText-Semibold.otf">
+            <string>SanFranciscoText-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingViewController">
+            <connections>
+                <outlet property="signupView" destination="iN0-l3-epB" id="xYs-DT-dSN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SignupView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="224"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAu-MN-HFv" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="164"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="buq-S6-VGy" customClass="LandingScreenTextField">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="iGr-9W-qou"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2er-Ik-VvR" customClass="LandingScreenTextField">
+                            <rect key="frame" x="0.0" y="50" width="600" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Z1C-iV-Ggh"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V7k-IZ-XMF" customClass="LandingScreenTextField">
+                            <rect key="frame" x="0.0" y="100" width="600" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Ydj-jq-J9S"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Create Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aNf-kl-mAP" customClass="LandingScreenTextField">
+                            <rect key="frame" x="0.0" y="150" width="600" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="loc-eH-eVw"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="aNf-kl-mAP" firstAttribute="top" secondItem="V7k-IZ-XMF" secondAttribute="bottom" id="1J7-E1-cR8"/>
+                        <constraint firstAttribute="trailing" secondItem="2er-Ik-VvR" secondAttribute="trailing" id="2bi-pA-NA5"/>
+                        <constraint firstItem="V7k-IZ-XMF" firstAttribute="leading" secondItem="aAu-MN-HFv" secondAttribute="leading" id="A8l-0T-VW6"/>
+                        <constraint firstItem="2er-Ik-VvR" firstAttribute="top" secondItem="buq-S6-VGy" secondAttribute="bottom" id="B3W-WN-VVt"/>
+                        <constraint firstAttribute="trailing" secondItem="V7k-IZ-XMF" secondAttribute="trailing" id="CJF-TQ-8ub"/>
+                        <constraint firstItem="V7k-IZ-XMF" firstAttribute="top" secondItem="2er-Ik-VvR" secondAttribute="bottom" id="DCG-wn-6ly"/>
+                        <constraint firstAttribute="bottom" secondItem="aNf-kl-mAP" secondAttribute="bottom" id="FT7-Dw-Kc4"/>
+                        <constraint firstAttribute="trailing" secondItem="aNf-kl-mAP" secondAttribute="trailing" id="MHT-Y2-bni"/>
+                        <constraint firstItem="buq-S6-VGy" firstAttribute="leading" secondItem="aAu-MN-HFv" secondAttribute="leading" id="RBo-O8-bHy"/>
+                        <constraint firstItem="buq-S6-VGy" firstAttribute="top" secondItem="aAu-MN-HFv" secondAttribute="top" id="f4m-Z4-NOe"/>
+                        <constraint firstItem="2er-Ik-VvR" firstAttribute="leading" secondItem="aAu-MN-HFv" secondAttribute="leading" id="hNB-2m-hXL"/>
+                        <constraint firstItem="aNf-kl-mAP" firstAttribute="leading" secondItem="aAu-MN-HFv" secondAttribute="leading" id="lWF-4c-f9Q"/>
+                        <constraint firstAttribute="trailing" secondItem="buq-S6-VGy" secondAttribute="trailing" id="q3k-jz-Sre"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyJ-DS-Hiw">
+                    <rect key="frame" x="0.0" y="164" width="600" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="2Sg-kv-rjO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="15"/>
+                    <state key="normal" title="SIGN UP">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="signUp:" destination="iN0-l3-epB" eventType="touchUpInside" id="nck-v9-wpo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="UyJ-DS-Hiw" secondAttribute="bottom" id="6da-rR-eZ6"/>
+                <constraint firstItem="UyJ-DS-Hiw" firstAttribute="top" secondItem="aAu-MN-HFv" secondAttribute="bottom" id="Fmu-Pd-Cbc"/>
+                <constraint firstItem="aAu-MN-HFv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="drb-UF-aic"/>
+                <constraint firstAttribute="trailing" secondItem="UyJ-DS-Hiw" secondAttribute="trailing" id="ds7-0s-iWd"/>
+                <constraint firstItem="aAu-MN-HFv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mJQ-SP-Qwp"/>
+                <constraint firstItem="UyJ-DS-Hiw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s1O-lf-RDY"/>
+                <constraint firstAttribute="trailing" secondItem="aAu-MN-HFv" secondAttribute="trailing" id="xJH-g1-Qam"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="email" destination="V7k-IZ-XMF" id="Y6l-Gc-9Li"/>
+                <outlet property="firstName" destination="buq-S6-VGy" id="ATU-4y-Mft"/>
+                <outlet property="lastName" destination="2er-Ik-VvR" id="Hz8-bZ-t0k"/>
+                <outlet property="password" destination="aNf-kl-mAP" id="BxC-iO-BO7"/>
+            </connections>
+            <point key="canvasLocation" x="218" y="169"/>
+        </view>
+    </objects>
+</document>

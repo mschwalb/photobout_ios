@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoText-Light.otf">
+            <string>SanFranciscoText-Light</string>
+        </mutableArray>
+        <mutableArray key="nevis.ttf">
+            <string>nevis-Bold</string>
+            <string>nevis-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="98" id="XNh-ym-Auk" customClass="CommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XNh-ym-Auk" id="akW-Qc-4Jf">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWZ-3N-hZX" customClass="ProfilePicView">
+                        <rect key="frame" x="15" y="27" width="44" height="44"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="ggL-Je-zil"/>
+                            <constraint firstAttribute="height" constant="44" id="hxc-07-O6f"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hanstina" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ci3-6E-rMy">
+                        <rect key="frame" x="67" y="27" width="46" height="14"/>
+                        <fontDescription key="fontDescription" name="nevis-Bold" family="nevis" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BA-uF-nZb" userLabel="Description">
+                        <rect key="frame" x="67" y="46" width="238" height="13"/>
+                        <fontDescription key="fontDescription" name="nevis-Bold" family="nevis" pointSize="11"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_clock" translatesAutoresizingMaskIntoConstraints="NO" id="66d-Jc-bfY">
+                        <rect key="frame" x="223" y="29" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="TU6-9J-1VT"/>
+                            <constraint firstAttribute="height" constant="10" id="Wo8-sl-pqa"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVB-JC-5t7" userLabel="Sep">
+                        <rect key="frame" x="15" y="96" width="290" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="xJ1-PJ-HYk"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?? days ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiT-xo-iwa">
+                        <rect key="frame" x="243" y="27" width="62" height="15"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="12"/>
+                        <color key="textColor" red="0.8862745098" green="0.25098039220000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="YiT-xo-iwa" secondAttribute="bottom" id="48T-rY-NHP"/>
+                    <constraint firstItem="6BA-uF-nZb" firstAttribute="leading" secondItem="hWZ-3N-hZX" secondAttribute="trailing" constant="8" id="88l-C0-6Bv"/>
+                    <constraint firstItem="Ci3-6E-rMy" firstAttribute="top" secondItem="hWZ-3N-hZX" secondAttribute="top" id="9Vl-fC-tCK"/>
+                    <constraint firstItem="YiT-xo-iwa" firstAttribute="centerY" secondItem="Ci3-6E-rMy" secondAttribute="centerY" id="CjV-VB-qOB"/>
+                    <constraint firstItem="6BA-uF-nZb" firstAttribute="trailing" secondItem="akW-Qc-4Jf" secondAttribute="trailing" constant="-15" id="H3P-QX-1dT"/>
+                    <constraint firstAttribute="bottom" secondItem="GVB-JC-5t7" secondAttribute="bottom" id="IL1-5z-tHN"/>
+                    <constraint firstItem="hWZ-3N-hZX" firstAttribute="leading" secondItem="akW-Qc-4Jf" secondAttribute="leading" constant="15" id="MTd-ZU-Dhf"/>
+                    <constraint firstItem="Ci3-6E-rMy" firstAttribute="leading" secondItem="hWZ-3N-hZX" secondAttribute="trailing" constant="8" id="PpY-wi-59e"/>
+                    <constraint firstAttribute="centerY" secondItem="hWZ-3N-hZX" secondAttribute="centerY" id="Uwt-Tq-Uqa"/>
+                    <constraint firstItem="YiT-xo-iwa" firstAttribute="leading" secondItem="66d-Jc-bfY" secondAttribute="trailing" constant="10" id="VgL-HB-857"/>
+                    <constraint firstItem="GVB-JC-5t7" firstAttribute="leading" secondItem="akW-Qc-4Jf" secondAttribute="leading" constant="15" id="gWR-lR-5um"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="66d-Jc-bfY" secondAttribute="bottom" id="kyG-we-P7w"/>
+                    <constraint firstItem="Ci3-6E-rMy" firstAttribute="trailing" secondItem="akW-Qc-4Jf" secondAttribute="trailingMargin" id="l5h-fg-dB4"/>
+                    <constraint firstAttribute="trailing" secondItem="GVB-JC-5t7" secondAttribute="trailing" constant="15" id="nkb-X0-BT1"/>
+                    <constraint firstItem="66d-Jc-bfY" firstAttribute="centerY" secondItem="Ci3-6E-rMy" secondAttribute="centerY" id="oEZ-bF-c4M"/>
+                    <constraint firstAttribute="trailing" secondItem="YiT-xo-iwa" secondAttribute="trailing" constant="15" id="rNT-qE-u5l"/>
+                    <constraint firstItem="Ci3-6E-rMy" firstAttribute="top" secondItem="akW-Qc-4Jf" secondAttribute="topMargin" id="t2v-7u-i9A"/>
+                    <constraint firstItem="66d-Jc-bfY" firstAttribute="top" secondItem="6BA-uF-nZb" secondAttribute="bottom" constant="5" id="ugA-Bj-fVE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6BA-uF-nZb" secondAttribute="bottom" id="upb-8W-EjY"/>
+                    <constraint firstItem="6BA-uF-nZb" firstAttribute="top" secondItem="Ci3-6E-rMy" secondAttribute="bottom" constant="5" id="w9D-uX-tcq"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="l5h-fg-dB4"/>
+                        <exclude reference="t2v-7u-i9A"/>
+                        <exclude reference="upb-8W-EjY"/>
+                        <exclude reference="kyG-we-P7w"/>
+                        <exclude reference="ugA-Bj-fVE"/>
+                        <exclude reference="48T-rY-NHP"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="commentLabel" destination="6BA-uF-nZb" id="xBD-eU-4ZR"/>
+                <outlet property="profilePic" destination="hWZ-3N-hZX" id="fJm-nC-s4D"/>
+                <outlet property="timeLabel" destination="YiT-xo-iwa" id="N3n-94-RJd"/>
+                <outlet property="user" destination="Ci3-6E-rMy" id="4A7-h4-LAb"/>
+            </connections>
+            <point key="canvasLocation" x="238" y="224"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="white_clock" width="22" height="22"/>
+    </resources>
+</document>

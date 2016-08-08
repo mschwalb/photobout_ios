@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BoutDurationView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nA-w1-fyi">
+                    <rect key="frame" x="15" y="0.0" width="570" height="1"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.25098039220000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dIw-uY-fe6"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Txc-4N-Uxz">
+                    <rect key="frame" x="15" y="1" width="570" height="599"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="oFc-E3-Cug"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="9PC-rU-IXK"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Txc-4N-Uxz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9uZ-S6-cL9"/>
+                <constraint firstItem="7nA-w1-fyi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Dur-Fg-OjU"/>
+                <constraint firstItem="Txc-4N-Uxz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="HZd-C7-SUb"/>
+                <constraint firstAttribute="bottom" secondItem="Txc-4N-Uxz" secondAttribute="bottom" id="Tfi-sV-1zx"/>
+                <constraint firstAttribute="trailing" secondItem="7nA-w1-fyi" secondAttribute="trailing" constant="15" id="YRk-p6-3pr"/>
+                <constraint firstItem="Txc-4N-Uxz" firstAttribute="top" secondItem="7nA-w1-fyi" secondAttribute="bottom" id="f0M-gf-DAI"/>
+                <constraint firstItem="7nA-w1-fyi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="k8g-Fl-ndd"/>
+                <constraint firstAttribute="trailing" secondItem="Txc-4N-Uxz" secondAttribute="trailing" constant="15" id="ws6-pq-tAI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9uZ-S6-cL9"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

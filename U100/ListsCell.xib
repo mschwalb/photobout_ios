@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoText-Light.otf">
+            <string>SanFranciscoText-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="A2y-pW-6fS" customClass="ListsCell">
+            <rect key="frame" x="0.0" y="0.0" width="258" height="239"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="258" height="239"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dh0-kK-eHW" userLabel="List Photo">
+                        <rect key="frame" x="10" y="10" width="238" height="209"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="0.090196078431372548" green="0.5490196078431373" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7v-7D-dKN">
+                        <rect key="frame" x="0.0" y="219" width="258" height="20"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_list" translatesAutoresizingMaskIntoConstraints="NO" id="cga-ZM-Ty7">
+                        <rect key="frame" x="107" y="93" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Uqh-5Y-uoD"/>
+                            <constraint firstAttribute="width" constant="44" id="zmH-E5-KAL"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cga-ZM-Ty7" secondAttribute="trailing" id="1et-70-lmR"/>
+                <constraint firstAttribute="bottom" secondItem="cga-ZM-Ty7" secondAttribute="bottom" id="2EJ-2O-Yky"/>
+                <constraint firstAttribute="bottom" secondItem="s7v-7D-dKN" secondAttribute="bottom" id="AfS-Lb-qAc"/>
+                <constraint firstItem="s7v-7D-dKN" firstAttribute="leading" secondItem="A2y-pW-6fS" secondAttribute="leading" id="D1H-Ey-STp"/>
+                <constraint firstItem="cga-ZM-Ty7" firstAttribute="top" secondItem="A2y-pW-6fS" secondAttribute="top" id="DON-RR-6Xh"/>
+                <constraint firstItem="s7v-7D-dKN" firstAttribute="top" secondItem="dh0-kK-eHW" secondAttribute="bottom" id="Ess-J0-Kxq"/>
+                <constraint firstAttribute="trailing" secondItem="s7v-7D-dKN" secondAttribute="trailing" id="Vh8-9S-blO"/>
+                <constraint firstItem="dh0-kK-eHW" firstAttribute="top" secondItem="A2y-pW-6fS" secondAttribute="top" constant="10" id="Vqg-cg-0hT"/>
+                <constraint firstAttribute="centerX" secondItem="dh0-kK-eHW" secondAttribute="centerX" id="gSg-EU-M8r"/>
+                <constraint firstItem="cga-ZM-Ty7" firstAttribute="centerX" secondItem="dh0-kK-eHW" secondAttribute="centerX" id="h47-9G-9AY"/>
+                <constraint firstItem="cga-ZM-Ty7" firstAttribute="centerY" secondItem="dh0-kK-eHW" secondAttribute="centerY" id="jau-xh-DWG"/>
+                <constraint firstItem="cga-ZM-Ty7" firstAttribute="leading" secondItem="A2y-pW-6fS" secondAttribute="leading" id="l41-OW-iCB"/>
+                <constraint firstAttribute="trailing" secondItem="dh0-kK-eHW" secondAttribute="trailing" constant="10" id="l9V-Ta-QQ4"/>
+                <constraint firstItem="dh0-kK-eHW" firstAttribute="leading" secondItem="A2y-pW-6fS" secondAttribute="leading" constant="10" id="m0s-e8-Z49"/>
+            </constraints>
+            <size key="customSize" width="258" height="239"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1et-70-lmR"/>
+                    <exclude reference="2EJ-2O-Yky"/>
+                    <exclude reference="DON-RR-6Xh"/>
+                    <exclude reference="l41-OW-iCB"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="addList" destination="cga-ZM-Ty7" id="GoM-Gt-Lk0"/>
+                <outlet property="name" destination="s7v-7D-dKN" id="5XJ-dq-3h3"/>
+                <outlet property="photo" destination="dh0-kK-eHW" id="iSo-UH-LfH"/>
+            </connections>
+            <point key="canvasLocation" x="260" y="384.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="add_list" width="132" height="132"/>
+    </resources>
+</document>

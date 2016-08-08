@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="nevis.ttf">
+            <string>nevis-Bold</string>
+            <string>nevis-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5UT-ph-rvn" customClass="SmallFeedCell">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="210" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iNe-yP-r6y">
+                        <rect key="frame" x="10" y="10" width="190" height="92"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDO-l7-6LG">
+                        <rect key="frame" x="10" y="107" width="145" height="14"/>
+                        <fontDescription key="fontDescription" name="nevis-Bold" family="nevis" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="x6o-Gn-Qq7">
+                        <rect key="frame" x="160" y="107" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="CtV-cA-6EJ"/>
+                            <constraint firstAttribute="width" constant="15" id="dQL-AO-AKQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="??" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0U-xn-ThO">
+                        <rect key="frame" x="180" y="107" width="20" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="rT3-nK-YQZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="nevis-Bold" family="nevis" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winner_bookmark" translatesAutoresizingMaskIntoConstraints="NO" id="AzM-eK-HDx">
+                        <rect key="frame" x="175" y="10" width="25" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="eX3-07-UcV"/>
+                            <constraint firstAttribute="width" constant="25" id="wq5-yF-NYp"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AzM-eK-HDx" secondAttribute="trailing" constant="10" id="0fa-EP-2aG"/>
+                <constraint firstAttribute="bottom" secondItem="c0U-xn-ThO" secondAttribute="bottom" constant="10" id="28x-hs-vsJ"/>
+                <constraint firstItem="xDO-l7-6LG" firstAttribute="top" secondItem="iNe-yP-r6y" secondAttribute="bottom" constant="5" id="3ds-1V-Qx5"/>
+                <constraint firstItem="c0U-xn-ThO" firstAttribute="top" secondItem="iNe-yP-r6y" secondAttribute="bottom" constant="5" id="6Wh-7c-xtU"/>
+                <constraint firstItem="iNe-yP-r6y" firstAttribute="top" secondItem="5UT-ph-rvn" secondAttribute="top" constant="10" id="GZc-SJ-qfb"/>
+                <constraint firstItem="x6o-Gn-Qq7" firstAttribute="top" secondItem="iNe-yP-r6y" secondAttribute="bottom" id="HoI-0f-lMe"/>
+                <constraint firstItem="x6o-Gn-Qq7" firstAttribute="leading" secondItem="xDO-l7-6LG" secondAttribute="trailing" constant="5" id="Ox0-CD-PRi"/>
+                <constraint firstItem="xDO-l7-6LG" firstAttribute="leading" secondItem="5UT-ph-rvn" secondAttribute="leading" constant="10" id="QFK-zq-GsW"/>
+                <constraint firstAttribute="bottom" secondItem="xDO-l7-6LG" secondAttribute="bottom" constant="10" id="UNs-RL-P3T"/>
+                <constraint firstAttribute="bottom" secondItem="x6o-Gn-Qq7" secondAttribute="bottom" constant="10" id="UVf-HA-n5o"/>
+                <constraint firstItem="x6o-Gn-Qq7" firstAttribute="centerY" secondItem="xDO-l7-6LG" secondAttribute="centerY" id="VoZ-dR-3mf"/>
+                <constraint firstItem="iNe-yP-r6y" firstAttribute="leading" secondItem="5UT-ph-rvn" secondAttribute="leading" constant="10" id="Xwr-ZJ-a4W"/>
+                <constraint firstItem="c0U-xn-ThO" firstAttribute="leading" secondItem="x6o-Gn-Qq7" secondAttribute="trailing" constant="5" id="ecB-oW-n9A"/>
+                <constraint firstItem="AzM-eK-HDx" firstAttribute="top" secondItem="5UT-ph-rvn" secondAttribute="top" constant="10" id="fm6-cm-Qng"/>
+                <constraint firstAttribute="trailing" secondItem="iNe-yP-r6y" secondAttribute="trailing" constant="10" id="huM-Of-NNu"/>
+                <constraint firstAttribute="trailing" secondItem="c0U-xn-ThO" secondAttribute="trailing" constant="10" id="qAb-6B-cZU"/>
+            </constraints>
+            <size key="customSize" width="210" height="131"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="HoI-0f-lMe"/>
+                    <exclude reference="UVf-HA-n5o"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="countLabel" destination="c0U-xn-ThO" id="Mb0-JP-mir"/>
+                <outlet property="icon" destination="x6o-Gn-Qq7" id="cb8-tK-TLB"/>
+                <outlet property="name" destination="xDO-l7-6LG" id="xgl-9n-mmM"/>
+                <outlet property="photo" destination="iNe-yP-r6y" id="lqm-Xy-AD7"/>
+                <outlet property="widthConstraint" destination="rT3-nK-YQZ" id="6ed-um-sDh"/>
+                <outlet property="winnerBookmark" destination="AzM-eK-HDx" id="UOs-5v-XMO"/>
+            </connections>
+            <point key="canvasLocation" x="215" y="217.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="logo_white" width="200" height="200"/>
+        <image name="winner_bookmark" width="93" height="185"/>
+    </resources>
+</document>

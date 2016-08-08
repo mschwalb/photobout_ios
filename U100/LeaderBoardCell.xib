@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoText-Semibold.otf">
+            <string>SanFranciscoText-Semibold</string>
+            <string>SanFranciscoText-Semibold</string>
+            <string>SanFranciscoText-Semibold</string>
+            <string>SanFranciscoText-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="uLb-mv-xFm" customClass="LeaderBoardCell">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uLb-mv-xFm" id="qIE-rm-aU3">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paG-Cm-5m2">
+                        <rect key="frame" x="15" y="29" width="8" height="21"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5FB-lc-c7g" customClass="ProfilePicView">
+                        <rect key="frame" x="15" y="15" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="XKS-PI-Fp0"/>
+                            <constraint firstAttribute="height" constant="50" id="oo2-an-BL3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2D-GP-4Lj" userLabel="Container">
+                        <rect key="frame" x="70" y="22" width="146" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christina Montnero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klY-1L-NcT" userLabel="name">
+                                <rect key="frame" x="0.0" y="0.0" width="146" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="8U5-r9-DMZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@hanstina" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLc-xP-tD5" userLabel="handle">
+                                <rect key="frame" x="0.0" y="20" width="146" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="11T-MD-RT2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="12"/>
+                                <color key="textColor" red="0.88627450980392153" green="0.25098039215686274" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="klY-1L-NcT" firstAttribute="leading" secondItem="C2D-GP-4Lj" secondAttribute="leading" id="72o-Wg-mLD"/>
+                            <constraint firstItem="wLc-xP-tD5" firstAttribute="leading" secondItem="C2D-GP-4Lj" secondAttribute="leading" id="FgB-dN-Gl7"/>
+                            <constraint firstAttribute="trailing" secondItem="wLc-xP-tD5" secondAttribute="trailing" id="RIi-gO-2Bc"/>
+                            <constraint firstAttribute="bottom" secondItem="wLc-xP-tD5" secondAttribute="bottom" id="pUZ-qT-PdN"/>
+                            <constraint firstItem="wLc-xP-tD5" firstAttribute="top" secondItem="klY-1L-NcT" secondAttribute="bottom" constant="5" id="rIx-Ka-uV9"/>
+                            <constraint firstItem="klY-1L-NcT" firstAttribute="top" secondItem="C2D-GP-4Lj" secondAttribute="top" id="wQE-BS-X7u"/>
+                            <constraint firstAttribute="trailing" secondItem="klY-1L-NcT" secondAttribute="trailing" id="z6w-nr-GdJ"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="4 Votes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgg-fl-ALg" userLabel="Votes">
+                        <rect key="frame" x="221" y="31" width="123" height="18"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gR-xM-plX" userLabel="Sep">
+                        <rect key="frame" x="15" y="78" width="329" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="CAN-uT-eM2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Mgg-fl-ALg" firstAttribute="trailing" secondItem="qIE-rm-aU3" secondAttribute="trailing" constant="-15" id="3NP-Vx-43t"/>
+                    <constraint firstItem="5FB-lc-c7g" firstAttribute="leading" secondItem="qIE-rm-aU3" secondAttribute="leading" constant="15" id="5kG-CI-Wtp"/>
+                    <constraint firstItem="2gR-xM-plX" firstAttribute="leading" secondItem="qIE-rm-aU3" secondAttribute="leading" constant="15" id="6oX-m7-Ow3"/>
+                    <constraint firstAttribute="centerY" secondItem="5FB-lc-c7g" secondAttribute="centerY" id="H7n-zW-tow"/>
+                    <constraint firstAttribute="trailing" secondItem="2gR-xM-plX" secondAttribute="trailing" constant="15" id="NIM-Eo-3An"/>
+                    <constraint firstAttribute="centerY" secondItem="C2D-GP-4Lj" secondAttribute="centerY" id="RyB-NZ-M1E"/>
+                    <constraint firstItem="Mgg-fl-ALg" firstAttribute="leading" secondItem="C2D-GP-4Lj" secondAttribute="trailing" constant="5" id="d8L-6e-RPG"/>
+                    <constraint firstAttribute="centerY" secondItem="Mgg-fl-ALg" secondAttribute="centerY" id="dXL-f5-vvY"/>
+                    <constraint firstItem="C2D-GP-4Lj" firstAttribute="leading" secondItem="5FB-lc-c7g" secondAttribute="trailing" constant="5" id="e8x-hx-bdS"/>
+                    <constraint firstAttribute="bottom" secondItem="2gR-xM-plX" secondAttribute="bottom" id="fhE-1X-I8w"/>
+                    <constraint firstItem="5FB-lc-c7g" firstAttribute="leading" secondItem="paG-Cm-5m2" secondAttribute="trailing" constant="5" id="ohz-pa-X4X"/>
+                    <constraint firstAttribute="centerY" secondItem="paG-Cm-5m2" secondAttribute="centerY" id="sFI-OO-WRR"/>
+                    <constraint firstItem="paG-Cm-5m2" firstAttribute="leading" secondItem="qIE-rm-aU3" secondAttribute="leading" constant="15" id="vQ5-EP-Jwh"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="ohz-pa-X4X"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="handle" destination="wLc-xP-tD5" id="Q0s-jA-x6O"/>
+                <outlet property="name" destination="klY-1L-NcT" id="fVF-DC-kBF"/>
+                <outlet property="numVotes" destination="Mgg-fl-ALg" id="a7n-II-O6T"/>
+                <outlet property="profilePic" destination="5FB-lc-c7g" id="LTE-PT-VWU"/>
+                <outlet property="rank" destination="paG-Cm-5m2" id="oUP-9j-CrW"/>
+            </connections>
+            <point key="canvasLocation" x="226.5" y="125"/>
+        </tableViewCell>
+    </objects>
+</document>

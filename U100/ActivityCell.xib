@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoText-Light.otf">
+            <string>SanFranciscoText-Light</string>
+            <string>SanFranciscoText-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="Q2j-iH-Cde" customClass="ActivityCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q2j-iH-Cde" id="OCp-kO-oBr">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?? days ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ie5-JE-0dS">
+                        <rect key="frame" x="243" y="64" width="62" height="15"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="12"/>
+                        <color key="textColor" red="0.8862745098" green="0.25098039220000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey_clock" translatesAutoresizingMaskIntoConstraints="NO" id="Yl3-ia-MWq">
+                        <rect key="frame" x="228" y="67" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="EHQ-Xm-wQ3"/>
+                            <constraint firstAttribute="width" constant="10" id="jMe-z8-IKP"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S13-JR-Fc7" userLabel="Separator">
+                        <rect key="frame" x="15" y="84" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.8862745098" green="0.25098039220000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="BDu-JU-liU"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" text="Ashray liked your product Nike Hyper-dunk 2014 TB" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCx-p4-oaS" userLabel="Description">
+                        <rect key="frame" x="64" y="21" width="241" height="36"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbB-ps-YOk" customClass="ProfilePicView">
+                        <rect key="frame" x="15" y="21" width="44" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="bRu-mx-iko"/>
+                            <constraint firstAttribute="height" constant="44" id="ddX-7v-x3n"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="UCx-p4-oaS" firstAttribute="trailing" secondItem="OCp-kO-oBr" secondAttribute="trailing" constant="-15" id="3JQ-YU-hdr"/>
+                    <constraint firstItem="rbB-ps-YOk" firstAttribute="top" secondItem="UCx-p4-oaS" secondAttribute="top" id="5vo-5q-bw3"/>
+                    <constraint firstAttribute="trailing" secondItem="ie5-JE-0dS" secondAttribute="trailing" constant="15" id="IGd-Sd-keP"/>
+                    <constraint firstAttribute="trailing" secondItem="S13-JR-Fc7" secondAttribute="trailing" constant="15" id="LGv-dZ-KcD"/>
+                    <constraint firstItem="UCx-p4-oaS" firstAttribute="leading" secondItem="rbB-ps-YOk" secondAttribute="trailing" constant="5" id="PBE-c4-Ytx"/>
+                    <constraint firstItem="ie5-JE-0dS" firstAttribute="centerY" secondItem="Yl3-ia-MWq" secondAttribute="centerY" id="UvP-p5-lhv"/>
+                    <constraint firstItem="UCx-p4-oaS" firstAttribute="top" secondItem="OCp-kO-oBr" secondAttribute="topMargin" constant="9" id="dMR-Oj-c5z"/>
+                    <constraint firstItem="S13-JR-Fc7" firstAttribute="leading" secondItem="OCp-kO-oBr" secondAttribute="leading" constant="15" id="mdW-cg-csk"/>
+                    <constraint firstItem="rbB-ps-YOk" firstAttribute="leading" secondItem="OCp-kO-oBr" secondAttribute="leading" constant="15" id="o12-eg-C5M"/>
+                    <constraint firstItem="S13-JR-Fc7" firstAttribute="top" secondItem="ie5-JE-0dS" secondAttribute="bottom" constant="5" id="sak-fg-wWW"/>
+                    <constraint firstAttribute="bottom" secondItem="S13-JR-Fc7" secondAttribute="bottom" id="vpj-El-smg"/>
+                    <constraint firstItem="ie5-JE-0dS" firstAttribute="leading" secondItem="Yl3-ia-MWq" secondAttribute="trailing" constant="5" id="wn6-mf-d8G"/>
+                    <constraint firstAttribute="centerY" secondItem="rbB-ps-YOk" secondAttribute="centerY" id="xHi-Lb-B8T"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="dMR-Oj-c5z"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="message" destination="UCx-p4-oaS" id="sHs-2v-ifv"/>
+                <outlet property="profilePic" destination="rbB-ps-YOk" id="48d-ya-kID"/>
+                <outlet property="time" destination="ie5-JE-0dS" id="mV1-mD-sDg"/>
+            </connections>
+            <point key="canvasLocation" x="323" y="125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="grey_clock" width="43" height="43"/>
+    </resources>
+</document>

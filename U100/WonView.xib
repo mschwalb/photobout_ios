@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WonView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nbJ-6Q-hfO">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewLayout key="collectionViewLayout" id="woD-b7-S5V" customClass="HomeFeedGridLayout"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="57F-ky-xUf"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="4aw-fJ-vw8"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nbJ-6Q-hfO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2q2-8Z-CFq"/>
+                <constraint firstItem="nbJ-6Q-hfO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bxk-eP-Bd5"/>
+                <constraint firstAttribute="trailing" secondItem="nbJ-6Q-hfO" secondAttribute="trailing" id="Iax-jQ-4rj"/>
+                <constraint firstAttribute="bottom" secondItem="nbJ-6Q-hfO" secondAttribute="bottom" id="vui-Xk-JfA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collection" destination="nbJ-6Q-hfO" id="yUC-0X-9ps"/>
+            </connections>
+        </view>
+    </objects>
+</document>
